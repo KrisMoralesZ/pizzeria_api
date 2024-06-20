@@ -1,6 +1,12 @@
 package com.example.pizza.persistence.entity;
 
-import jakarta.persistence.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,15 +28,15 @@ public class PizzaEntity {
     @Column(nullable = false, length = 150)
     private String description;
 
-    @Column(nullable = false, columnDefinition = "Decimal(5,2")
+    @Column(nullable = false, columnDefinition = "Decimal(5,2)")
     private Double price;
 
     @Column(columnDefinition = "TINYINT")
-    private boolean vegetarian;
+    private Boolean vegetarian;
 
     @Column(columnDefinition = "TINYINT")
-    private boolean vegan;
+    private Boolean vegan;
 
     @Column(columnDefinition = "TINYINT", nullable = false)
-    private boolean available;
+    private Boolean available;
 }
