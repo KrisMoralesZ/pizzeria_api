@@ -1,7 +1,6 @@
-package com.example.pizza.controller.web;
+package com.example.pizza.web.controller;
 
 import com.example.pizza.persistence.entity.PizzaEntity;
-import com.example.pizza.persistence.repository.PizzaRepository;
 import com.example.pizza.service.PizzaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
